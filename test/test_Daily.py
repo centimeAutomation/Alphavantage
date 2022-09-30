@@ -33,10 +33,10 @@ def test_time_series_daily(tdata, get_env, init_conf_prop):
         alpha_base.basic_response_validation(content_type=content)
 
 
-
-@pytest.mark.skip
-def test_time_series_daily(get_env, init_conf_prop):
-    alpha_base = AlphaViews(init_conf_prop, get_env)
-    response = alpha_base.get_stock_response("dseries", "IBM")
-    alpha_base.basic_response_validation(response, content_type= "application/json")
-    alpha_base.data_error_validation(response.json())
+#
+# @pytest.mark.skip
+# def test_time_series_daily(get_env, init_conf_prop):
+#     alpha_base = AlphaViews(init_conf_prop, get_env)
+#     response = alpha_base.get_stock_response("dseries", "IBM")
+#     alpha_base.basic_response_validation(response, content_type= "application/json")
+#     alpha_base.data_error_validation(response.json())
